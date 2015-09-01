@@ -1,11 +1,12 @@
-#Supported Cloud Images
+#Compatible Cloud Images
 
 GCE - Google Compute Engine
 AMI - Amazon Machine Image
 Azure
 OVA
+Photon-bosh-stemcell
 
-How to build cloud images
+#How to build cloud images
 
 sudo make cloud-image IMG_NAME=image-name
 
@@ -22,6 +23,10 @@ Azure - A vhd file
 OVA - An ova file (vmdk + ovf)
 
 sudo make cloud-image-all builds all the cloud images
+
+###How to build Photon bosh-stemcell
+
+Please follow the link to [ build ] (https://github.com/cloudfoundry/bosh/blob/develop/bosh-stemcell/README.md) Photon bosh-stemcell
 
 
 #How to create running instances in the cloud
@@ -87,4 +92,18 @@ The ova image uses a custom linux kernel, which is an optimized kernel based on 
 
 [OVFTOOL] (https://my.vmware.com/group/vmware/details?downloadGroup=OVFTOOL410&productId=491)
 
+##Photon Bosh
+
+Please refer [bosh docs] (http://bosh.io/docs) to deploy BOSH on Photon 
+
+##Links to the pre-built TP2 images
+[GCE] (https://dl.bintray.com/vmware/photon/gce/1.0TP2/x86_64/photon-1.0TP2.tar.gz)
+
+[Azure] (https://dl.bintray.com/vmware/photon/azure/1.0TP2/x86_64/photon-1.0TP2.vhd)
+
+[AMI] (https://dl.bintray.com/vmware/photon/ami/1.0TP2/x86_64/photon-1.0TP2.tar.gz)
+
+[OVA for Workstation/Fusion] (https://dl.bintray.com/vmware/photon/ova/1.0TP2/x86_64/photon-1.0TP2.ova)
+
+[vSphere Photon bosh-stemcell] (https://bintray.com/artifact/download/vmware/photon/vSpherePhotonStemcell/1.0TP2/bosh-stemcell-0000-vsphere-esxi-photon-TP2-go_agent.tgz)
 
