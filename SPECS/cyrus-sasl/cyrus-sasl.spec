@@ -12,6 +12,7 @@ Source0:	ftp://ftp.cyrusimap.org/cyrus-sasl/%{name}-%{version}.tar.gz
 Patch0:		http://www.linuxfromscratch.org/patches/blfs/svn/cyrus-sasl-2.1.26-fixes-3.patch
 Requires:	openssl
 Requires:	krb5 >= 1.12
+Requires:   Linux-PAM
 BuildRequires:	openssl-devel
 BuildRequires:  krb5 >= 1.12
 BuildRequires:  e2fsprogs-devel
